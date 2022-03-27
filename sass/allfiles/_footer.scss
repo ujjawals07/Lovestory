@@ -1,0 +1,8 @@
+.footers{
+    background-color: darkgreen;
+    color: bisque;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 5/-1;
+    grid-template-rows: auto;
+}

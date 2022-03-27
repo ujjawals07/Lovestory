@@ -1,0 +1,32 @@
+@import "allfiles/header";
+@import "allfiles/login";
+@import "allfiles/comment";
+@import "allfiles/story";
+@import "allfiles/footer";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 120vh repeat(4, 30vh) 20vh;
+  grid-template-columns: repeat(5, minmax(15rem, 1fr));
+}
