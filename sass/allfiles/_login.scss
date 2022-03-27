@@ -1,7 +1,115 @@
-.login{
-    color: chartreuse;
-    background-color: blue;
-    display: grid;
-    grid-column: 1/6;
+.login {
+  display: grid;
+  grid-column: 1/6;
+  background-color: #f4eaf6;
+  grid-template-columns: repeat(4, 1fr) 10vw 20vw 1fr 10vw;
+  grid-template-rows: repeat(4, 1fr) ;
+//background: lavenderblush;
 
+
+  &_heading{
+      font-size: 50px;
+      font-family: 'quinka', sans-serif;
+                                                
+      font-weight: 300;
+      grid-row: 2/3;
+      grid-column: 2/6;
+      align-self: center;
+      color:#f77991;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+  }
+  &_paragraph{
+    font-size: 15px;
+font-family: cursive;
+    font-weight: 200;
+    grid-column: 2/5;
+    grid-row: 3/3;
+
+                                                
+  }
+}
+.login_form{
+    grid-column: 6/8;
+    grid-row: 1/4;
+    
+    background-image: linear-gradient(
+        to left top,
+        rgba(0, 0, 0, 0.808),
+        rgb(214, 127, 175)
+      ),
+      url(/img/love.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3rem;
+    box-shadow: 0 20px 30px black;
+  
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.input{
+    height: 2rem;
+    background-color: #ffafbc;
+    border: none;
+}
+.label-writing{
+    font-size: 25px;
+    font-family:'quinka', sans-serif;
+   margin-left: -3rem;
+   padding-bottom: .5rem;
+   color: rgb(19, 18, 18);
+    
+}
+.space{
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.check{
+    font-size: 20px;
+  color: rgb(197, 28, 28);
+}
+.font{
+    font-size: 10px;
+    padding-right: 1rem;
+  color: whitesmoke;
+}
+.checkbox{
+    display: flex;
+   
+}
+
+.btn-l:link,
+.btn-l:visited {
+  grid-column: 2/4;
+  grid-row: 4/4;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: cursive;
+  color: #0a0a0a;
+  align-self: center;
+  text-decoration: none;
+ 
+  justify-self: center;
+  background-color:#ffafbc; 
+  padding: .3rem 1rem;
+
+}
+.btn-l:hover,
+.btn-l:active {
+   background: #ec97a5;
+    transform: translateY(-5px);
+}
+.login_img{
+    height: 10vh;
+    grid-row: 4/4;
+    grid-column: 1/-1;
+    width: 100%;
 }

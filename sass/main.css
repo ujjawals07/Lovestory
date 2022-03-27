@@ -76,13 +76,159 @@
 }
 
 .login {
-  color: chartreuse;
-  background-color: blue;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/6;
+  background-color: #f4eaf6;
+  -ms-grid-columns: (1fr)[4] 10vw 20vw 1fr 10vw;
+      grid-template-columns: repeat(4, 1fr) 10vw 20vw 1fr 10vw;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.login_heading {
+  font-size: 50px;
+  font-family: 'quinka', sans-serif;
+  font-weight: 300;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #f77991;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.login_paragraph {
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: 200;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+}
+
+.login_form {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.808)), to(#d67faf)), url(/img/love.jpg);
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.808), #d67faf), url(/img/love.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3rem;
+  -webkit-box-shadow: 0 20px 30px black;
+          box-shadow: 0 20px 30px black;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.input {
+  height: 2rem;
+  background-color: #ffafbc;
+  border: none;
+}
+
+.label-writing {
+  font-size: 25px;
+  font-family: 'quinka', sans-serif;
+  margin-left: -3rem;
+  padding-bottom: .5rem;
+  color: #131212;
+}
+
+.space {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.check {
+  font-size: 20px;
+  color: #c51c1c;
+}
+
+.font {
+  font-size: 10px;
+  padding-right: 1rem;
+  color: whitesmoke;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-l:link,
+.btn-l:visited {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: cursive;
+  color: #0a0a0a;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #ffafbc;
+  padding: .3rem 1rem;
+}
+
+.btn-l:hover,
+.btn-l:active {
+  background: #ec97a5;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.login_img {
+  height: 10vh;
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  grid-column: 1/-1;
+  width: 100%;
 }
 
 .comments {
@@ -96,11 +242,10 @@
 .story {
   background-color: brown;
   color: cornsilk;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
+  grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
+  background-color: #d6addf;
 }
 
 .footers {
@@ -140,8 +285,8 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 120vh (30vh)[4] 20vh;
-      grid-template-rows: 120vh repeat(4, 30vh) 20vh;
+  -ms-grid-rows: 120vh 50vh 100vh (30vh)[3] 20vh;
+      grid-template-rows: 120vh 50vh 100vh repeat(3, 30vh) 20vh;
   -ms-grid-columns: (minmax(15rem, 1fr))[5];
       grid-template-columns: repeat(5, minmax(15rem, 1fr));
 }
