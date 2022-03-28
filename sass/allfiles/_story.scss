@@ -14,7 +14,7 @@ padding-top: 3rem;
     color: black;
     grid-column: 3/4;
     justify-self: center;
-    background-color: #e181c3;
+    background-color:#ffc8f4;
     padding: .3rem 2rem ;
     align-self: center;
     transform: rotateX(5deg);
@@ -36,11 +36,13 @@ padding-top: 3rem;
 .story_img{
     width: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 200px;
+    height: 40vh;
 }
 .couple_img-1{
     grid-row: 2/3;
     grid-column: 2/3;
+  
 }
 .couple_img-2{
     grid-column: 2/3;
@@ -62,31 +64,33 @@ padding-top: 3rem;
 .couple_story1{
     grid-row: 2/4;
     grid-column: 3/5;
-    background-color: #f8c6ed;
+    background-color: #f6efee;
     box-shadow: 0px 2rem 2rem black;
 }
 
 .couple_story2{
     grid-row: 4/6;
     grid-column: 3/5;
-    background-color: #f8c6ed;
+    background-color: #f6efee;
     box-shadow: 0px 2rem 2rem black;
 }
 .couple_story3{
     grid-row: 6/-1;
     grid-column: 3/5;
-    background-color: #f8c6ed;
+    background-color: #f6efee;
     box-shadow: 0px 2rem 2rem black;
 }
 .date{
-  font-size: 40px;
+  font-size: 20px;
   align-self: flex-end;
 }
 .name{
 color: black;
-font-size: 30px;
+font-size: 20px;
 }
 .story_lines{
     color: black;
 font-size: 15px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+padding: 1rem 1rem;
 }

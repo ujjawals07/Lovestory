@@ -27,6 +27,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 120vh  70vh  160vh 150vh  20vh;
+  grid-template-rows: 120vh  70vh  160vh 130vh  60vh;
   grid-template-columns: repeat(5, minmax(15rem, 1fr));
 }
