@@ -48,12 +48,13 @@
 }
 
 .header_btn:link,
-.header_btn:visited {
+.header_btn {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
   -ms-grid-row: 4;
-  grid-row: 4/4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
   font-size: 20px;
   font-weight: 300;
   font-family: cursive;
@@ -65,6 +66,7 @@
   text-shadow: 0px 10px 20px #e711c4;
   -ms-grid-column-align: center;
       justify-self: center;
+  cursor: pointer;
 }
 
 .header_btn:hover,
