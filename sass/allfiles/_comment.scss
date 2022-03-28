@@ -1,6 +1,17 @@
 .comments {
   color: rgb(247, 232, 232);
-  background-color: rgb(224, 19, 156);
+ 
   grid-column: 1/-1;
   display: grid;
+  grid-template-rows: repeat(5,1fr);
+  grid-template-columns: repeat(5,1fr);
+  background-color: #f4eaf6;
 }
+.video{
+  width: 100%;
+  background-size: cover;
+  grid-column: 1/-1;
+  grid-row: 2/5;
+}
+
+
