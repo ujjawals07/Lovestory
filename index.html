@@ -52,7 +52,7 @@
 <input type="checkbox" name="NEWS" id="NEWS" class="check" checked> Yes </input>
 </div>
   <div class="btn-login">
-      <a href="#" class="btn-l">start writing</a>
+      <a  class="btn-l" id="btn_login">start writing</a>
   </div>
 </div>
     </section>
@@ -159,6 +159,23 @@
   </div>
     </footer>
    
+
+    <div class="modal hidden">
+      <button class="btn--close-modal" id="btn_close">&times;</button>
+      <h2 class="modal__header">
+      fill up some informations <span class="highlight"> and write your story.</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" required/>
+        <label>Last Name</label>
+        <input type="text"  required/>
+        <label>Email Address</label>
+        <input type="email" required />
+        <a class="btn-popup" id="btn_pop">Next step &rarr;</a>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
   
 </html>

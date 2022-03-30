@@ -86,8 +86,8 @@ font-family: cursive;
    
 }
 
-.btn-l:link,
-.btn-l:visited {
+
+.btn-l{
   grid-column: 2/4;
   grid-row: 4/4;
   font-size: 10px;
@@ -100,10 +100,9 @@ font-family: cursive;
   justify-self: center;
   background-color:#ffafbc; 
   padding: .3rem 1rem;
-
+cursor: pointer;
 }
-.btn-l:hover,
-.btn-l:active {
+.btn-l:hover {
    background: #ec97a5;
     transform: translateY(-5px);
 }
