@@ -60,4 +60,19 @@ btn.addEventListener("click", function () {
   console.log("done");
 });
 
+function openwindow2() {
+  window.open("./storytwo.html", "_parent");
+}
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", function () {
+  openwindow2();
+});
+
+function openwindow3() {
+  window.open("./story3.html", "_parent");
+}
+const btn3 = document.querySelector("#btn3");
+btn3.addEventListener("click", function () {
+  openwindow3();
+});
 
