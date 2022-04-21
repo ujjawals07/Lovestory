@@ -23,10 +23,19 @@ body {
   line-height: 1.2;
   font-size: 15px;
   font-weight: 500;
+  background-color: #f4eaf6;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 120vh  70vh  160vh 120vh  80vh;
+  grid-template-rows: 120vh 70vh 160vh 110vh 80vh;
   grid-template-columns: repeat(5, minmax(15rem, 1fr));
 }
+@media (max-width: 828px) {
+  .container {
+    display: grid;
+    grid-template-rows: 90vh 70vh 160vh 80vh 80vh;
+  }
+}
+
+

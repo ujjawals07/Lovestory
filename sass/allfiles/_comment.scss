@@ -2,10 +2,11 @@
   color: rgb(247, 232, 232);
  
   grid-column: 1/-1;
+  grid-row: 4/5;
   display: grid;
- grid-template-rows: 20vh 30vh 20vh 50vh;
+ grid-template-rows: 20vh 30vh 20vh 10vh;
  grid-template-columns: 10vw 1fr 10vw;
-  background-color: #f4eaf6;
+
 position: relative;
 }
 
@@ -13,19 +14,21 @@ position: relative;
 
   grid-column: 1/-1;
   grid-row: 1/-1;
- 
+
   position: absolute;
  
   object-fit: cover;
   opacity: .5;
   z-index: 0;
+
 }
 .video{
   width: 100%;
   background-size: cover;
   position: relative;
   object-fit: cover;
-  //height: 100vh;
+  height: 100%;
+
 }
 
 .user_comment{
@@ -118,4 +121,15 @@ max-width: 100rem;
   right: 6%;
   transform: translate(50%, -50%);
   margin-left: 3rem;
+}
+
+@media (max-width:1116px){
+  .video{
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    height: 100vh;
+  
+  }
 }

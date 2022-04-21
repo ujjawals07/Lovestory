@@ -13,9 +13,6 @@
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
-  -ms-grid-columns: (minmax(min-content, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
 }
 
 .heading {
@@ -77,6 +74,15 @@
   text-shadow: 0px 0px 5px #0f0f0f;
 }
 
+@media (max-width: 758px) {
+  .heading {
+    font-size: 40px;
+  }
+  .heading_paragraph {
+    font-size: 15px;
+  }
+}
+
 .login {
   display: -ms-grid;
   display: grid;
@@ -92,7 +98,7 @@
 
 .login_heading {
   font-size: 50px;
-  font-family: 'quinka', sans-serif;
+  font-family: "quinka", sans-serif;
   font-weight: 300;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -169,9 +175,9 @@
 
 .label-writing {
   font-size: 25px;
-  font-family: 'quinka', sans-serif;
+  font-family: "quinka", sans-serif;
   margin-left: -3rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   color: #131212;
 }
 
@@ -214,7 +220,7 @@
   -ms-grid-column-align: center;
       justify-self: center;
   background-color: #ffafbc;
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
 }
 
@@ -232,16 +238,77 @@
   width: 100%;
 }
 
+@media (max-width: 1023px) {
+  .login_heading {
+    font-size: 30px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    padding-left: 2rem;
+  }
+  .login_paragraph {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    font-size: 15px;
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
+  .login_form {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/8;
+  }
+}
+
+/*<div class="couple_story couple_story1">
+<h4 class="name">ujjawal & priyanshi </h4>
+<p class="story_lines">hey!!! i  am ujjawal ,i  met my girl on facebook  ,ipropsed her on insta our relationship  was long distance and we were loyal for each other i was  very possesive for her  i was a toxic boyfriend it was the reason of our breackup after the breackup no girl came in my life but in  2022 i again came relationship with priyanshi  but for her it was timepass anf for me she is everything we cannot be for eachother but i will love her  forever... <span class="date">28 march 2022</span>
+  <a  class="header_btn hm" id="btni"> READ STORY  &#10132</a>
+</p>
+</div>
+<figure class="couple_img couple_img-1">
+<img src="img/pic1.jpg" alt="p" class="story_img">
+</figure>
+
+
+<div class="couple_story couple_story2">
+<h4 class="name">martin & ema</h4>
+<p class="story_lines">hey i am ema,so i will talk about how i met so i met to martin in my  aunt house he was 6 feet tall  and a musculer men whent i firstly met him i was fall in love with him he is a boxer and a sexy men!!! i like her tattoos but our journey  was not easy we faced many unneccesary trouble but now finally  we are living together and loving together he cares for me he loves 
+  <span class="date">01 march 2022 </span>
+  <a class="header_btn hm" id="btn2"> READ STORY  &#10132</a>
+  </p>
+</div>
+
+<figure class="couple_img couple_img-2">
+<img src="img/pic18.jpg" alt="p" class="story_img">
+</figure>
+
+
+<div class= "couple_story couple_story3">
+<h4 class="name">Alex & jenny</h4>
+<p class="story_lines">alex was from australia and jenny was from england they met on goa beach.jenny was in black bikni when i saw her  then suddenly my heart says that bro she is for you i went to closer to her and said hey what is your name she replied she is jenny lucifer and asked my name i proposed her for coffee then she agreed and we went to cafe french there i asked to her about that  she is single or commited then she.. 
+  <span class="date">17 march 2022</span> 
+  <a class="header_btn hm" id="btn3"> READ STORY &#10132</a>
+</p>
+
+</div>
+
+<figure class="couple_img couple_img-3">
+<img src="img/pic12.jpg" alt="p" class="story_img height_img">
+</figure>*/
 .comments {
   color: #f7e8e8;
   grid-column: 1/-1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20vh 30vh 20vh 50vh;
-      grid-template-rows: 20vh 30vh 20vh 50vh;
+  -ms-grid-rows: 20vh 30vh 20vh 10vh;
+      grid-template-rows: 20vh 30vh 20vh 10vh;
   -ms-grid-columns: 10vw 1fr 10vw;
       grid-template-columns: 10vw 1fr 10vw;
-  background-color: #f4eaf6;
   position: relative;
 }
 
@@ -261,6 +328,7 @@
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
 }
 
 .user_comment {
@@ -365,26 +433,27 @@
   margin-left: 3rem;
 }
 
+@media (max-width: 1116px) {
+  .video {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100vh;
+  }
+}
+
 .story {
   color: cornsilk;
   grid-column: 1/-1;
   display: -ms-grid;
   display: grid;
-  background-color: #f4eaf6;
-  -ms-grid-columns: 10vw 20vw 30vw 30vw 15vw;
-      grid-template-columns: 10vw 20vw 30vw 30vw 15vw;
-  -ms-grid-rows: 10vh (20vh)[6];
-      grid-template-rows: 10vh repeat(6, 20vh);
-  grid-gap: 15px;
-  padding-top: 3rem;
 }
 
 .story_heading {
   font-size: 40px;
   color: black;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
   -ms-grid-column-align: center;
       justify-self: center;
   background-color: #ffc8f4;
@@ -403,87 +472,18 @@
   background-color: black;
 }
 
-.couple_img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .story_img {
-  width: 100%;
+  width: 10rem;
+  height: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 200px;
-  height: 40vh;
-}
-
-.couple_img-1 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.couple_img-2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  grid-row: 4/6;
-  height: 50vh;
-}
-
-.couple_img-3 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 6;
-  grid-row: 6/6;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.height_img {
-  height: 40vh;
 }
 
 .couple_story {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.couple_story1 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3/5;
-  background-color: #f6efee;
-  -webkit-box-shadow: 0px 2rem 2rem black;
-          box-shadow: 0px 2rem 2rem black;
-}
-
-.couple_story2 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  grid-row: 4/6;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3/5;
-  background-color: #f6efee;
-  -webkit-box-shadow: 0px 2rem 2rem black;
-          box-shadow: 0px 2rem 2rem black;
-}
-
-.couple_story3 {
-  grid-row: 6/-1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3/5;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: auto;
   background-color: #f6efee;
   -webkit-box-shadow: 0px 2rem 2rem black;
           box-shadow: 0px 2rem 2rem black;
@@ -510,6 +510,17 @@
 .hidden {
   overflow: hidden;
   opacity: 0;
+}
+
+.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  gap: 2rem;
+  margin-right: 5rem;
 }
 
 .footers {
@@ -581,14 +592,6 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-@media only screen and (max-width: 971px) {
-  .paragraph-f {
-    justify-self: flex-end;
-    margin-left: 0;
-    margin-top: 2rem;
-  }
 }
 
 .blog {
@@ -719,6 +722,12 @@
   color: #fadcdc;
 }
 
+@media (max-width: 830px) {
+  .footers {
+    margin-top: 15rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -738,14 +747,24 @@ body {
   line-height: 1.2;
   font-size: 15px;
   font-weight: 500;
+  background-color: #f4eaf6;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 120vh  70vh  160vh 120vh  80vh;
-      grid-template-rows: 120vh  70vh  160vh 120vh  80vh;
+  -ms-grid-rows: 120vh 70vh 160vh 110vh 80vh;
+      grid-template-rows: 120vh 70vh 160vh 110vh 80vh;
   -ms-grid-columns: (minmax(15rem, 1fr))[5];
       grid-template-columns: repeat(5, minmax(15rem, 1fr));
+}
+
+@media (max-width: 828px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 90vh 70vh 160vh 80vh 80vh;
+        grid-template-rows: 90vh 70vh 160vh 80vh 80vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

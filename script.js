@@ -44,11 +44,11 @@ const previousbtn = function () {
   );
 };
 
-btnRight.addEventListener("click", nextarrowbtn);
-btnLeft.addEventListener("click", previousbtn);
+btnRight.addEventListener("click", previousbtn);
+btnLeft.addEventListener("click", nextarrowbtn);
 document.addEventListener("keydown", function (e) {
-  if (e.key === "ArrowLeft") previousbtn();
-  e.key === "ArrowRight" && nextarrowbtn();
+  if (e.key === "ArrowLeft") nextarrowbtn();
+  e.key === "ArrowRight" &&  previousbtn();
 });
 
 function openwindow() {
@@ -96,7 +96,5 @@ function writing() {
 }
 const btn_pop = document.querySelector("#btn_pop");
 btn_pop.addEventListener("click", function () {
-
-
   writing();
 });
